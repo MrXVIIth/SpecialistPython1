@@ -32,5 +32,24 @@ n = 3
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Количество: "))
+
+pos = 0
+
+if n % 2 == 0:
+    while pos < n // 2:
+        print(" " * pos, "#", " " * (n - pos * 2 - 2), "#", sep=" ")
+        pos += 1
+    while pos > 0:
+        print(" " * (pos - 1), "#", " " * (n - (pos - 1) * 2 - 2), "#", sep=" ")
+        pos -= 1
+else:
+    while pos < n // 2:
+        print(" " * pos, "#", " " * (n - pos * 2 - 2), "#", sep=" ")
+        pos += 1
+    print(" " * pos, "#", sep=" ")
+    while pos - 1 >= 0:
+        print(" " * (pos - 1), "#", " " * (n - (pos - 1) * 2 - 2), "#", sep=" ")
+        pos -= 1
+
 ```
