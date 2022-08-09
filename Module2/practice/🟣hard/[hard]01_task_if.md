@@ -18,7 +18,22 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x = int(input("Введите число: "))
+
+a = x//1000
+b = x%1000//100
+c = x%100//10
+d = x%10
+
+print("a:", a)
+print("b:", b)
+print("c:", c)
+print("d:", d)
+
+if a == d  and  b == c:
+    print("Симметрично")
+else:
+    print("Не симметрично")
 ```
 
 ---
