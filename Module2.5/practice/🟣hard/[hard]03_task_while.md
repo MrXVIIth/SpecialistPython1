@@ -17,7 +17,30 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cond = int(input("Число: "))
+
+right = cond
+temp = cond - 1
+left = 0
+buffer = 0
+while right > 0:
+    while temp > 0:
+        if right % temp == 0:
+            left += temp
+            # print(left)
+        temp -= 1
+    temp = left - 1
+
+    while temp > 0:
+        if left % temp == 0:
+            buffer += temp
+        temp -= 1
+    if right == buffer and left < right:
+        print(left, right)
+    right -= 1
+    temp = right - 1
+    left = 0
+    buffer = 0
 ```
 
 ---
