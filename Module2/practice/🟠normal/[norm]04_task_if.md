@@ -19,7 +19,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x = int(input("Введите число: "))
+
+if x % 3 == 0 or x % 5 == 0:
+    if x % 3 == 0 and x % 5 != 0:
+        print("Foo")
+    if x % 3 != 0 and x % 5 == 0:
+        print("Bar")
+    if x % 3 == 0 and x % 5 == 0:
+        print("FooBar")
+
 ```
 
 ---
