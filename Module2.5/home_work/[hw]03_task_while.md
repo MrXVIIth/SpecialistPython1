@@ -28,7 +28,17 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Количество: "))
+
+line = 1
+column = 1
+while line <= n:
+    while column <= n:
+        print(line * column, end=" ")
+        column += 1
+    print()
+    column = 1
+    line += 1
 ```
 
 ---
