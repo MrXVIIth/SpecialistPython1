@@ -16,7 +16,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Количество: "))
+
+prev = 1
+act = 0
+count = 1
+
+while count < n:
+    act, prev = act + prev, act
+    count += 1
+print(act)
 ```
 
 ### Данные для самопроверки
